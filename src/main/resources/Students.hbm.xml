@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hibernatMainmethod">
+
+    <class name="Students" table="Students">
+
+        <!-- Primary key mapping -->
+
+
+          <!--  <generator class="assigned" /> --><!-- Or use other generator strategy -->
+
+
+        <!-- Property mappings -->
+        <id name="sno" column="sno"/>
+        <property name="sname" column="sname" />
+        <property name="smark" column="smark" />
+
+        <!-- Additional mappings (e.g., associations) -->
+        <!-- <many-to-one name="associationName" column="foreign_key_column" class="AssociatedEntity" /> -->
+        <!-- <one-to-many name="collectionName" class="AssociatedEntity" /> -->
+        <!-- Add more associations as needed -->
+
+    </class>
+
+</hibernate-mapping>
